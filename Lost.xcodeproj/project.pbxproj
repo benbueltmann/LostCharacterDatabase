@@ -25,6 +25,9 @@
 		98E6C545199A94B500461115 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E6C520199A94B400461115 /* CoreData.framework */; };
 		98E6C54D199A94B500461115 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98E6C54B199A94B500461115 /* InfoPlist.strings */; };
 		98E6C54F199A94B500461115 /* LostTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6C54E199A94B500461115 /* LostTests.m */; };
+		98E6C559199A96F500461115 /* lost.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98E6C558199A96F500461115 /* lost.plist */; };
+		98E6C55C199A98D100461115 /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6C55B199A98D100461115 /* Character.m */; };
+		98E6C55F199ABC9D00461115 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E6C55E199ABC9D00461115 /* AddViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,11 @@
 		98E6C54A199A94B500461115 /* LostTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LostTests-Info.plist"; sourceTree = "<group>"; };
 		98E6C54C199A94B500461115 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		98E6C54E199A94B500461115 /* LostTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LostTests.m; sourceTree = "<group>"; };
+		98E6C558199A96F500461115 /* lost.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = lost.plist; sourceTree = "<group>"; };
+		98E6C55A199A98D100461115 /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		98E6C55B199A98D100461115 /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		98E6C55D199ABC9D00461115 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		98E6C55E199ABC9D00461115 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +136,14 @@
 				98E6C52E199A94B400461115 /* Main.storyboard */,
 				98E6C534199A94B400461115 /* MasterViewController.h */,
 				98E6C535199A94B400461115 /* MasterViewController.m */,
+				98E6C55D199ABC9D00461115 /* AddViewController.h */,
+				98E6C55E199ABC9D00461115 /* AddViewController.m */,
 				98E6C537199A94B400461115 /* DetailViewController.h */,
 				98E6C538199A94B400461115 /* DetailViewController.m */,
 				98E6C53A199A94B400461115 /* Images.xcassets */,
 				98E6C531199A94B400461115 /* Lost.xcdatamodeld */,
+				98E6C55A199A98D100461115 /* Character.h */,
+				98E6C55B199A98D100461115 /* Character.m */,
 				98E6C523199A94B400461115 /* Supporting Files */,
 			);
 			path = Lost;
@@ -140,6 +152,7 @@
 		98E6C523199A94B400461115 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				98E6C558199A96F500461115 /* lost.plist */,
 				98E6C524199A94B400461115 /* Lost-Info.plist */,
 				98E6C525199A94B400461115 /* InfoPlist.strings */,
 				98E6C528199A94B400461115 /* main.m */,
@@ -244,6 +257,7 @@
 			files = (
 				98E6C53B199A94B400461115 /* Images.xcassets in Resources */,
 				98E6C527199A94B400461115 /* InfoPlist.strings in Resources */,
+				98E6C559199A96F500461115 /* lost.plist in Resources */,
 				98E6C530199A94B400461115 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,8 +280,10 @@
 				98E6C539199A94B400461115 /* DetailViewController.m in Sources */,
 				98E6C536199A94B400461115 /* MasterViewController.m in Sources */,
 				98E6C52D199A94B400461115 /* AppDelegate.m in Sources */,
+				98E6C55F199ABC9D00461115 /* AddViewController.m in Sources */,
 				98E6C533199A94B400461115 /* Lost.xcdatamodeld in Sources */,
 				98E6C529199A94B400461115 /* main.m in Sources */,
+				98E6C55C199A98D100461115 /* Character.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +488,7 @@
 				98E6C554199A94B500461115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98E6C555199A94B500461115 /* Build configuration list for PBXNativeTarget "LostTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +497,7 @@
 				98E6C557199A94B500461115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
